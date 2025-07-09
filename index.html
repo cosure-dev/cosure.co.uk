@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoSure - The Open-Source PAS for Insurance Brokers</title>
+    <meta name="description" content="CoSure is a modern, open-source Policy Administration System (PAS) designed to empower insurance brokers with flexibility, control, and a lower total cost of ownership.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Favicon - Referencing the local file -->
+    <link rel="icon" href="./assets/images/favicon.png" type="image/png">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8FAFC; 
+            color: #1E293B; 
+        }
+        /* Custom styles for brand colors */
+        .bg-primary-blue { background-color: #1A5FFF; }
+        .text-primary-blue { color: #1A5FFF; }
+        .bg-accent-green { background-color: #00C49A; }
+        .text-accent-green { color: #00C49A; }
+        .border-primary-blue { border-color: #1A5FFF; }
+        .hover\:bg-blue-700:hover { background-color: #1651d8; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="py-4 px-6 md:px-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo - Referencing the local file -->
+            <div class="flex items-center space-x-3">
+                <img src="./assets/images/logo.png" alt="CoSure Logo" class="h-20 w-auto">
+            </div>
+            
+            <!-- GitHub Link -->
+            <a href="https://github.com/cosure-dev" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 text-gray-600 hover:text-primary-blue transition-colors duration-300">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.492.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.378.203 2.397.1 2.65.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" />
+                </svg>
+                <span class="font-semibold hidden sm:block">View on GitHub</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 md:px-10 py-16 md:py-24 text-center">
+        
+        <!-- Hero Section -->
+        <h1 class="text-4xl md:text-6xl font-extrabold text-primary-blue leading-tight">
+            The Modern PAS That Puts You in Control.
+        </h1>
+        <p class="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-gray-700">
+            CoSure is a powerful, open-source Policy Administration System for insurance brokers.
+            Built on a modern, API-first architecture, it delivers unparalleled flexibility and speed-to-market, free from vendor lock-in.
+        </p>
+        <div class="mt-10 flex justify-center items-center space-x-4">
+            <a href="https://github.com/cosure-dev" target="_blank" rel="noopener noreferrer" class="bg-primary-blue text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-blue-700 transition-transform duration-300 transform hover:scale-105">
+                Get Started
+            </a>
+            <a href="https://github.com/cosure-dev/pas-platform" target="_blank" rel="noopener noreferrer" class="bg-gray-200 text-gray-800 font-bold py-3 px-8 rounded-lg text-lg hover:bg-gray-300 transition-transform duration-300 transform hover:scale-105">
+                Star on GitHub ★
+            </a>
+        </div>
+
+        <!-- "Coming Soon" Notice -->
+        <div class="mt-20 max-w-4xl mx-auto bg-blue-50 border-l-4 border-primary-blue p-6 rounded-r-lg text-left">
+            <div class="flex">
+                <div class="py-1">
+                    <svg class="h-8 w-8 text-primary-blue mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-primary-blue">Under Active Development</h3>
+                    <p class="text-gray-700 mt-2">
+                        The CoSure platform is currently in active development, following our public roadmap. The full administrative portal and core services are being built. You can follow our progress, review the architecture, and contribute to the project on GitHub.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Pillars Section -->
+        <div class="mt-24 grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
+            <!-- Pillar 1: Open Source -->
+            <div class="p-6 bg-white rounded-xl shadow-sm">
+                <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-primary-blue">
+                    <svg class="h-7 w-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+                    </svg>
+                </div>
+                <h3 class="mt-5 text-xl font-bold">Truly Open-Source</h3>
+                <p class="mt-2 text-gray-600">Gain complete control over your technology stack. Modify, extend, and self-host the platform to fit your exact business needs. No licensing fees, no vendor lock-in.</p>
+            </div>
+            <!-- Pillar 2: No-Code -->
+            <div class="p-6 bg-white rounded-xl shadow-sm">
+                <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-primary-blue">
+                    <svg class="h-7 w-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.898 20.542L16.5 21.75l-.398-1.208a3.375 3.375 0 00-2.456-2.456L12.75 18l1.208-.398a3.375 3.375 0 002.456-2.456L16.5 14.25l.398 1.208a3.375 3.375 0 002.456 2.456l1.208.398-1.208.398a3.375 3.375 0 00-2.456 2.456z" />
+                    </svg>
+                </div>
+                <h3 class="mt-5 text-xl font-bold">No-Code Product Creation</h3>
+                <p class="mt-2 text-gray-600">Empower your business users. Visually build insurance products, define underwriting rules, and manage rating tables without writing a single line of code.</p>
+            </div>
+            <!-- Pillar 3: API-First -->
+            <div class="p-6 bg-white rounded-xl shadow-sm">
+                <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-primary-blue">
+                    <svg class="h-7 w-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                    </svg>
+                </div>
+                <h3 class="mt-5 text-xl font-bold">Headless & API-First</h3>
+                <p class="mt-2 text-gray-600">Built on a MACH architecture, every function is an API. Integrate with any system, build custom frontends, and create omnichannel experiences with ease.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-16">
+        <div class="container mx-auto py-6 px-6 md:px-10 text-center text-gray-500">
+            <p>&copy; 2025 CoSure Project. All rights reserved. Released under the Apache 2.0 License.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
